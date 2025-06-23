@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Variables (Dark/Light Theme) */
+:root {
+  --primary: #0a192f;     /* Dark blue */
+  --secondary: #64ffda;   /* Neon teal */
+  --text: #e6f1ff;       /* Light blue */
+  --text-dark: #8892b0;  /* Gray-blue */
+  --bg-light: #f8f8f8;   /* Light mode bg */
+  --card-bg: #112240;    /* Project card bg */
+}
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary);
+  color: var(--text);
+  line-height: 1.6;
+  transition: background 0.3s ease;
+}
+
+/* Navigation */
+/* Preserves all your existing classes - only adds enhancements */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 8%; /* Increased side padding */
+  align-items: center;
+    backdrop-filter: blur(8px);
+  background: rgba(10, 25, 47, 0.8);
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding-left: 2rem; /* Added left padding */
+  margin: 0; /* Ensures no default margins interfere */
+}
+
+nav a {
+  position: relative; /* Needed for underline effect */
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease; /* Enhanced to transition all properties */
+  padding: 0.5rem 0; /* Added vertical padding */
+  white-space: nowrap; /* Fixes Extracurriculars line break */
+}
+
+nav a:hover {
+  color: var(--secondary);
+}
+
+/* Added underline animation (won't affect layout) */
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--secondary);
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Active state styling */
+nav a.active {
+  color: var(--secondary);
+}
+
+nav a.active::after {
+  width: 100%;
+}
+
+/* Buttons */
+.btn {
+  /* Base Styles */
+  display: inline-block;
+  padding: 12px 28px;
+  background: transparent;
+  color: var(--secondary);
+  border: 2px solid var(--secondary);
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  
+  /* Glow Effect */
+  box-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+}
+
+/* Hover Animation */
+.btn:hover {
+  background: rgba(100, 255, 218, 0.1);
+  box-shadow: 
+    0 0 15px rgba(100, 255, 218, 0.5),
+    0 0 25px rgba(100, 255, 218, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Click Effect */
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Optional: Animated Border */
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(100, 255, 218, 0.4),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(10, 25, 47, 0.8);
+}

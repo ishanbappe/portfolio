@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishan Bapardekar | Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+ .contact-main {
+    padding: 4rem 2rem;
+    background: var(--primary); /* Use your theme color */
+    color: var(--text);
+}
+
+.contact-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+    color: var(--secondary);
+}
+ .contact-section h2{
+  display: inline-block;
+  animation: 
+    slideIn 1.5s ease-out forwards,
+    glow 2s infinite alternate 0.8s;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.contact-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(100, 255, 218, 0.1);
+}
+
+.contact-card i {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.contact-card h3 {
+    margin: 1rem 0;
+    color: var(--text);
+}
+
+.contact-card a, .contact-card p {
+    color: var(--text-dark);
+    transition: color 0.3s;
+}
+
+.contact-card a:hover {
+    color: var(--secondary);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 50px; /* Pill-shaped or use 50% for perfect circles */
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-methods {
+        grid-template-columns: 1fr;
+    }
+    
+    .social-links {
+        flex-wrap: wrap;
+    }
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="extracurriculars.html">Extracurriculars</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="contact-main">
+        <section class="contact-section">
+            <h2>Let's Connect</h2>
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Me</h3>
+                    <a href="mailto:ishanbapardekar@gmail.com">ishanbapardekar@gmail.com</a>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Call Me</h3>
+                    <a href="tel:+919930300757">+91 9930300757</a>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Mumbai, Maharashtra, India</p>
+                </div>
+            </div>
+            
+<div class="social-links">
+    <a href="https://www.linkedin.com/in/ishan-bapardekar-19bb04323/" target="_blank">LinkedIn</a>
+    <a href="https://x.com/ishaannb" target="_blank">Twitter</a>
+    <a href="https://www.instagram.com/ishaann.21/" target="_blank">Instagram</a>
+    <a href="facebook.com/ishan.bapardekar" target="_blank">Facebook</a>
+</div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Ishan Bapardekar. All rights reserved.</p>
+    </footer>
+</body>
+</html>

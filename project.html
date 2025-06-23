@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishan Bapardekar | Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>.projects {
+  padding: 5rem 10%;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--secondary);
+}
+
+/* Project Grid Layout */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Project Card Styling */
+.project-card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Button Alignment Fix */
+.project-card a.btn {
+  align-self: center; /* Centers horizontally in flex container */
+  margin-top: auto; /* Pushes button to bottom of card */
+  width: fit-content; /* Prevents button from stretching */
+  padding: 0.6rem 1.8rem; /* Slightly larger click area */
+}
+
+/* Optional: Card Hover Effect */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(100, 255, 218, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project-info {
+  padding: 1.5rem;
+}
+
+.project-info h3 {
+  margin-bottom: 0.5rem;
+  color: var(--secondary);
+}
+
+.project-info p {
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+/* Project Metadata Styling */
+.project-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin: 0.5rem 0 1rem;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+}
+
+.project-date,
+.project-tools {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-date i,
+.project-tools i {
+  color: var(--secondary);
+  font-size: 0.8rem;
+}
+/* Project Features List */
+.project-features {
+    margin: 0.8rem 0 1.2rem;
+    padding-left: 1.2rem;
+}
+
+.project-features li {
+    margin-bottom: 0.4rem;
+    position: relative;
+    list-style-type: none;
+}
+
+.project-features li::before {
+    content: "•";
+    color: var(--secondary);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Button Enhancement */
+.project-card .btn {
+    margin-top: auto;
+    padding: 0.7rem 1.8rem;
+    font-size: 0.9rem;
+}
+h3 {
+  margin-bottom: 0.5rem;
+  padding: 15px ;
+}
+p {
+    color: var(--text-dark);
+    padding: 15px ;
+}
+</style>
+</head>
+
+<body>
+    <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="project.html">Projects</a></li>
+      <li><a href="extracurriculars.html">Extracurriculars</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+        <section class="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                     <!-- Project 1 -->
+<div class="project-card">
+    <h3>LAN Design for a Corporate Office</h3>
+    <div class="project-meta">
+        <span class="project-date">
+            <i class="fas fa-calendar-alt"></i> March 15, 2025 - March 25, 2025
+        </span>
+        <span class="project-tools">
+            <i class="fas fa-tools"></i> draw.io, Network Planning
+        </span>
+    </div>
+    <p>A comprehensive network plan for a 3-floor corporate office including:</p>
+    <ul class="project-features">
+        <li>Floor-wise network segmentation</li>
+        <li>Hardware requirements</li>
+        <li>Security considerations</li>
+    </ul>
+    <a href="projects/213062_Ishan__Bapardekar_CN.pdf" class="btn" target="_blank">View Project</a>
+</div>
+
+
+    <div class="project-card">
+  <h3>E-commerce web for a bike dealership</h3>
+  <div class="project-meta">
+    <span class="project-date">
+      <i class="fas fa-calendar-alt"></i> june 15, 2025 - work in progress
+    </span>
+    <span class="project-tools">
+      <i class="fas fa-tools"></i> HTML, CSS, JavaScript
+    </span>
+  </div>
+  <p> created website </p>
+  <ul class="project-features">
+    <li>page for every bike company </li>
+    <li>EMI calculator</li>
+    <li>state wise on road price output </li>
+    <li>bike details and many more</li>
+  </ul>
+  <a href="http://127.0.0.1:3002/c:/Users/Ishaan/OneDrive/Desktop/html/home.html" class="btn" target="_blank">open website</a>
+</div>    
+
+
+<div class="project-card">
+    <h3>Garden Centre Database</h3>
+    <div class="project-meta">
+        <span class="project-date">
+            <i class="fas fa-calendar-alt"></i> March 28, 2025 - April 5, 2025
+        </span>
+        <span class="project-tools">
+            <i class="fas fa-tools"></i> MySQL, draw.io, MS Word
+        </span>
+    </div>
+    <p>Designed and implemented a relational database for a garden center featuring:</p>
+    <ul class="project-features">
+        <li>Inventory management system</li>
+        <li>Customer purchase tracking</li>
+        <li>Supplier relationship tables</li>
+    </ul>
+    <a href="projects/213062_Ishan_bapardekar_DBMS (2).pdf" class="btn" target="_blank">View Project</a>
+</div>
+
+
+<div class="project-card">
+  <h3>Estate Agency System</h3>
+  <div class="project-meta">
+    <span class="project-date">
+      <i class="fas fa-calendar-alt"></i> April 10, 2025 - April 25, 2025
+    </span>
+    <span class="project-tools">
+      <i class="fas fa-tools"></i> MySQL, draw.io, MS Word, OOSAD
+    </span>
+  </div>
+  <p>Designed a comprehensive system for an estate agency featuring:</p>
+  <ul class="project-features">
+    <li>Client management portal</li>
+    <li>Agent-seller communication system</li>
+    <li>Property listing database</li>
+    <li>Document generation tools</li>
+  </ul>
+  <a href="projects/213062_Ishan_Bapardekar_OOSAD (1).pdf" class="btn" target="_blank">View Project</a>
+</div>   
+
+
+<div class="project-card">
+  <h3>Algorithmic Solutions for Logistics Network Optimization</h3>
+  <div class="project-meta">
+    <span class="project-date">
+      <i class="fas fa-calendar-alt"></i> october 3, 2024 - october 15 25, 2024
+    </span>
+    <span class="project-tools">
+      <i class="fas fa-tools"></i> 
+    </span>
+  </div>
+  <p>Designed an Algorithm using</p>
+  <ul class="project-features">
+    <li>Programming Language: Python</li>
+    <li>Hash Tables: For inventory management</li>
+    <li>Venn Diagrams: Showing warehouse/distribution/retail relationships</li>
+  </ul>
+  <a href="projects/213062_Ishan_Bapardekar_AMCC.pdf" class="btn" target="_blank">View Project</a>
+</div>  
+
+
+  
+
+    
+                <!-- Add more projects -->
+            </div>
+        </section>
+    </main>
+      <footer>
+        <p>&copy; 2025 Ishan Bapardekar. All rights reserved.</p>
+    </footer>
+  
+</body>
+</html>

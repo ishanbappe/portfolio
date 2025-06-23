@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishan Bapardekar | Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    
+    .hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 5%;
+}
+.hero h1 span {
+  display: inline-block;
+  animation: 
+    slideIn 0.8s ease-out forwards,
+    glow 2s infinite alternate 0.8s;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px var(--secondary);
+  }
+  to {
+    text-shadow: 0 0 15px var(--secondary);
+  }
+}
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero span {
+  color: var(--secondary);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  color: var(--text-dark);
+}
+
+/* Glow Effect on Name */
+.hero h1 span {
+  text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
+}
+
+/* Animated Background (Optional) */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 50%, rgba(100, 255, 218, 0.1) 0%, transparent 50%);
+  z-index: -1;
+  opacity: 0.5;
+}
+</style>
+</head>
+<body>
+    <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="extracurriculars.html">Extracurriculars</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Hi, I'm <span>Ishan Bapardekar</span></h1>
+            <p>Software Engineer | Problem Solver | Tech Enthusiast | Athelite </p>
+            <a href="project.html" class="btn"> View My Work </a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Ishan Bapardekar. All rights reserved.</p>
+    </footer>
+</body>
+</html>

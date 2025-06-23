@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Extracurriculars</title>
+  <link rel="stylesheet" href="styles.css">
+<style>/* Hero Section */
+.sports-hero {
+  text-align: center;
+  padding: 6rem 1rem;
+  background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.9)), 
+              url('../assets/images/sports-bg.jpg') no-repeat center/cover;
+}
+
+.sports-hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.sports-hero h1 span {
+  color: var(--secondary);
+}
+
+.sports-hero p {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+}
+
+/* Sports Grid */
+.sports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 4rem 10%;
+}
+
+.sport-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  border-top: 3px solid var(--secondary);
+}
+
+.sport-card:hover {
+  transform: translateY(-10px);
+}
+
+.sport-icon {
+  font-size: 2.5rem;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.sport-card h3 {
+  margin-bottom: 1rem;
+}
+
+.sport-card ul {
+  padding-left: 1.5rem;
+  color: var(--text-dark);
+}
+
+.sport-card li {
+  margin-bottom: 0.5rem;
+}
+
+/* Values Section */
+.sports-values {
+  padding: 0 10% 4rem;
+  text-align: center;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.value-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.value-card h4 {
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .sports-hero h1 {
+    font-size: 2.5rem;
+  }
+}</style>
+
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="extracurriculars.html">Extracurriculars</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="sports-hero">
+      <h1><span>Beyond</span> The Screen</h1>
+      <p>Football • Swimming • Athletics • Video Editor • bike riding  </p>
+    </section>
+
+    <section class="sports-grid">
+      <!-- Football -->
+      <div class="sport-card">
+        <div class="sport-icon">
+          <i class="fas fa-futbol"></i>
+        </div>
+        <h3>Football</h3>
+        <ul>
+          <li>Captain, University Team (2024-2025)</li>
+          <li>Organized charity matches raising $5K+</li>
+        </ul>
+      </div>
+
+      <!-- Swimming -->
+      <div class="sport-card">
+        <div class="sport-icon">
+          <i class="fas fa-swimmer"></i>
+        </div>
+        <h3>Swimming</h3>
+        <ul>
+          <li>river swimmer </li>
+        </ul>
+      </div>
+            <div class="sport-card">
+        <div class="sport-icon">
+          <i class="fas fa-swimmer"></i>
+        </div>
+        <h3> Video editor </h3>
+        <ul>
+          <li>Editor of a content creating page </li>
+          <li>Posted reel which is viewed by 550k+ accounts</li>
+        </ul>
+      </div>
+            <div class="sport-card">
+        <div class="sport-icon">
+          <i class="fas fa-swimmer"></i>
+        </div>
+        <h3> Bike riding </h3>
+        <ul>
+          <li> Have some detailed knowladge of bikes and cars </li>
+          <li>Love to spend time riding bike </li>
+        </ul>
+      </div>
+
+      <!-- Add more sports -->
+    </section>
+
+    <section class="sports-values">
+      <h2>What Sports Taught Me</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <h4>Teamwork</h4>
+          <p>Leading groups under pressure translates directly to agile development teams.</p>
+        </div>
+        <div class="value-card">
+          <h4>Discipline</h4>
+          <p>5AM training sessions? Coding marathons feel easy now.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>

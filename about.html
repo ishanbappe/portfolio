@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishan Bapardekar | Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>/* About Section Layout */
+    .about-container h2 {
+  display: inline-block;
+  animation: 
+    slideIn 1s ease-out forwards,
+    glow 5s infinite alternate 10s;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.about {
+  padding: 5rem 10%;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-img {
+  flex: 1;
+}
+
+.profile-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  border: 3px solid var(--secondary);
+  box-shadow: 0 0 20px rgba(100, 255, 218, 0.2);
+}
+
+.about-content {
+  flex: 1.5;
+ 
+}
+
+/* Compact Skills Layout */
+.skills-compact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.skill-category {
+  background: var(--card-bg);
+  padding: 1.25rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--secondary);
+}
+
+.skill-category h4 {
+  color: var(--secondary);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Updated CSS */
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;  /* Adds space between tags */
+  margin-top: 0.5rem;
+}
+
+.tag {
+  background: rgba(100, 255, 218, 0.1);
+  color: var(--secondary);
+  padding: 0.35rem 0.8rem;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  white-space: nowrap; /* Prevents text wrapping */
+  border: 1px solid rgba(100, 255, 218, 0.3); /* Optional border */
+  transition: all 0.3s ease;
+}
+
+.tag:hover {
+  background: rgba(100, 255, 218, 0.2);
+  transform: translateY(-2px);
+}
+
+.skill-column li {
+  margin-bottom: 0.3rem;
+  color: var(--text-dark);
+}
+
+/* Centered Button */
+.btn-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .profile-img {
+    text-align: center;
+  }
+}</style>
+</head>
+<body>
+    <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="extracurriculars.html">Extracurriculars</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    
+    </header>
+    <main>
+<section class="about">
+  <div class="about-container">
+    <!-- Profile Image (Left Side) -->
+    <div class="profile-img">
+      <img src="images/ishan3.jpg" alt="Your Name">
+    </div>
+
+    <!-- Intro & Skills (Right Side) -->
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>I’m a Software Engineering student passionate about building efficient solutions. My skills include:</p>
+      
+<div class="skills-compact">
+  <!-- Single column for better flow -->
+  <div class="skill-category">
+    <h4><i class="fas fa-code"></i> Programming</h4>
+    <p>Currently expanding my expertise</p>
+  </div>
+
+  <div class="skill-category">
+    <h4><i class="fas fa-laptop-code"></i> Web Development</h4>
+    <div class="skill-tags">
+      <span class="tag">HTML/CSS</span>
+      <span class="tag">JavaScript</span>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h4><i class="fas fa-database"></i> Databases</h4>
+    <div class="skill-tags"></div>
+    <span class="tag">MySQL</span>
+  </div>
+
+  <div class="skill-category">
+    <h4><i class="fas fa-tools"></i> Tools</h4>
+    <div class="skill-tags">
+      <span class="tag">Git</span>
+      <span class="tag">Docker</span>
+      <span class="tag">VS Code</span>
+      <span class="tag">Visual Studio</span>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h4><i class="fas fa-project-diagram"></i> Methodologies</h4>
+       <div class="skill-tags">
+    <span class="tag">Agile</span>
+    <span class="tag">Waterfall</span>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h4><i class="fas fa-desktop"></i> Operating Systems</h4>
+       <div class="skill-tags">
+    <span class="tag">Windows</span>
+    <span class="tag">macOS</span>
+  </div>
+</div>
+<div class="skill-category">
+  <h4><i class="fas fa-language"></i> Known Languages</h4>
+  <div class="tags-container">  <!-- Added container div -->
+    <span class="tag">English</span>
+    <span class="tag">Marathi</span>
+    <span class="tag">Hindi</span>
+    <span class="tag">Sanskrit</span>
+    <span class="tag">Kokani</span>
+  </div>
+</div>
+
+      <!-- Centered Button -->
+      <div class="btn-container">
+        <a href="project.html" class="btn">See My Projects</a>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Ishan Bapardekar. All rights reserved.</p>
+    </footer>
+</body>
+</html>

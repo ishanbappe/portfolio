@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ishan Bapardekar | Education</title>
+  <link rel="stylesheet" href="styles.css">
+ 
+ <style>/* Timeline Design */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: var(--secondary);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.timeline-date {
+  position: absolute;
+  left: 50%;
+  top: -15px;
+  transform: translateX(-50%);
+  background: var(--primary);
+  color: var(--secondary);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--secondary);
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.timeline-content {
+  width: calc(50% - 2rem);
+  padding: 1.5rem;
+  background: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  margin-left: auto;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  margin-right: auto;
+}
+
+.timeline-content h3 {
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+
+.institution {
+  color: var(--text-dark);
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.coursework li {
+  margin-bottom: 0.3rem;
+  color: var(--text-dark);
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 1rem;
+  }
+  .timeline-date {
+    left: 1rem;
+    transform: none;
+  }
+  .timeline-content {
+    width: calc(100% - 4rem);
+    margin-left: 2rem !important;
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="project.html">Projects</a></li>
+       <li><a href="extracurriculars.html">Extracurriculars</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="education">
+      <h2 style="padding: 5%; text-align: center;">Education & Credentials</h2>
+      <div class="timeline">
+        <!-- Degree 1 -->
+        <div class="timeline-item">
+          <div class="timeline-date">2024 - 2027</div>
+          <div class="timeline-content">
+            <h3>Bachelor of Engineering in Software </h3>
+            <p class="institution">Univercity of Central Lancashrie </p>
+            <ul class="coursework">
+              <li>Relevant Coursework: Algorithms, Web Development, Database Systems, network management, business management</li>
+              <li>GPA: first class</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2022 - 2024</div>
+          <div class="timeline-content">
+            <h3>Maharashtra state board of higher secondary edu. </h3>
+            <p class="institution"> Bahrti vidya bhavans chopatty </p>
+            <ul class="coursework">
+              <li>Relevant Coursework: physics chemistry math and electronics </li>
+            </ul>
+          </div>
+        </div>
+                <div class="timeline-item">
+          <div class="timeline-date">2012 - 2022</div>
+          <div class="timeline-content">
+            <h3>Maharashtra state board of primary and secondary edu. </h3>
+            <p class="institution"> IES Modern English School, dadar w </p>
+            <ul class="coursework">
+              <li> 1st to 10th  </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Certification 
+        <div class="timeline-item">
+          <div class="timeline-date">2023</div>
+          <div class="timeline-content">
+            <h3>AWS Certified Developer</h3>
+            <p class="institution">Amazon Web Services</p>
+            <a href="#" class="btn">View Credential</a>
+          </div>
+        </div> -->
+        <!-- Add more items -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ishan Bapardekar. All rights reserved.</p>
+  </footer>
+</body>
+</html>
